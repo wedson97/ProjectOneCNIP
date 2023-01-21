@@ -25,7 +25,7 @@
 > 
 > * Englobando toda a função, também há um tratamento de erro que indicará que o cliente não está conectado.
 
-<h1>code structure</h1>
+<h1>Code structure</h1>
 <h1>Server</h1>
 
 > * It starts by importing some libraries such as "socket", "threading", "requests" and "json".
