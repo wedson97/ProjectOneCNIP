@@ -1,5 +1,61 @@
-<h1>Estruturação do código</h1>
-<h1> Servidor</h1>
+<h1>Projeto 1 - Protocolo de Interconexão de Redes de Computadores</h1>
+
+<h2>Descrição</h2>
+
+> Projeto desenvolvido como atividade referente a matéria Protocolo de Interconexão de Redes de Computadores do curso Tecnologia em Sistemas para internet - IFPB Guarabira.
+> O projeto consiste em uma aplicação cliente-servidor utilizando a API de Sockets do Python. 
+> A aplicação é capaz de responder mais de um cliente ao mesmo tempo, e atende à requisições dos mesmos por meio de "palavras-chaves" digitadas no terminal.
+
+<h3>Pré - Requisitos</h3>
+
+> * Biblioteca Requests instalado
+> * Digite `pip install requests` no terminal para instalar
+
+<h3>Aplicação</h3>
+
+> Protocolo de transporte de dados utilizada:
+>
+> * IPv4
+> * TCP
+>
+> Funcionalidades do servidor:
+>
+> * Cotação atual do Bitcoin
+> * Cotação atual do Dolar
+> * Cotação atual do Euro
+> * Localizar endereço através do CEP
+> * Desconectar e/ou Finalizar Servidor
+>
+> APIs:
+>
+> * https://docs.awesomeapi.com.br/api-de-moedas
+> * https://docs.awesomeapi.com.br/api-cep
+>
+> Bibliotecas:
+>
+> * Socket
+> * Threading
+> * Requests
+> * Json
+
+<h3>Execução</h3>
+
+> A execução da aplicação é feita completamente no terminal.
+> No terminal e no diretório da aplicação, o usuário deverá executar o arquivo `servidor.py` para ativar o servidor e tornar possível as conexões.
+> Com o servidor ativo, o usuário executa em outra aba do terminal o arquivo `cliente.py` para iniciar uma conexão ao servidor *(Repita esse processo para ativar mais conexões)*.
+> Feito isso, o cliente-servidor poderá trocar mensagens, o cliente informa as palavras-chave e o servidor responderá à requisição disponível.
+>
+> Palavras-chaves atualmente disponíveis:
+> * bitcoin
+> * cep
+> * dolar
+> * euro
+> * fechar
+> * sair
+
+<h2>Estruturação do código</h2>
+
+<h3> Servidor</h3>
 
 > * Ele começa importando algumas bibliotecas como "socket", "threading", "requests" e "json".
 > 
@@ -12,7 +68,7 @@
 > * Depois que a função de funcionalidade do servidor foi definida, é então que é feita a parte que dar vida ao servidor, com um código curto, com apenas 15 linhas, onde 
 > é chamada a função anteriormente criada.
 
-<h1>Cliente</h1>
+<h3>Cliente</h3>
 
 > * O código do cliente inicializa importando as bibliotecas "socket" e "threading".
 > 
@@ -25,8 +81,8 @@
 > 
 > * Englobando toda a função, também há um tratamento de erro que indicará que o cliente não está conectado.
 
-<h1>Code structure</h1>
-<h1>Server</h1>
+<h2>Code structure</h2>
+<h3>Server</h3>
 
 > * It starts by importing some libraries such as "socket", "threading", "requests" and "json".
 > 
@@ -39,7 +95,7 @@
 > * Once the server's functionality function has been defined, the server is brought to life with a short code, with only 15 lines, where the previously created 
 > function is called.
 
-<h1>Client</h1>
+<h3>Client</h3>
 
 > * The client code starts by importing the "socket" and "threading" libraries.
 > 
