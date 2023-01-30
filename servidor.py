@@ -3,6 +3,12 @@ import threading
 import requests
 import json
 
+# """
+#   Projeto #1 - Sockets
+#   Grupo:  Wedson Cândido da Silva
+#           Yagor Kalenieves
+# """
+
 HOST = socket.gethostbyname(socket.gethostname())
 PORT = 5555
 ADDR = (HOST, PORT)
